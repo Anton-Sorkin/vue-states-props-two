@@ -1,13 +1,15 @@
 <template>
-  <Child :greeting="someText" :age="myAge" :person="me" />
+  <div>
+    <Child :greeting="someText" :age="myAge" :person="me" />
 
-  <div :id="myAge.toString()"></div>
+    <div :id="myAge.toString()"></div>
 
-  <button @click="handleClick" :disabled="me.isMarried">Ändra text</button>
+    <button @click="handleClick" :disabled="me.isMarried">Ändra text</button>
+  </div>
 </template>
 
 <script lang="ts">
-import { Person } from "@/models/Person";
+import { Person } from "../models/Person";
 import { Options, Vue } from "vue-class-component";
 import Child from "./Child.vue";
 @Options({

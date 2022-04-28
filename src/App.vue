@@ -2,6 +2,7 @@
   <div>
     <Header />
     <Parent />
+    <Object />
   </div>
 </template>
 
@@ -9,11 +10,13 @@
 import { Options, Vue } from "vue-class-component";
 import Parent from "./components/Parent.vue";
 import Header from "./components/Header.vue";
+import Object from "./components/Object.vue";
 
 @Options({
   components: {
     Parent,
     Header,
+    Object,
   },
 })
 export default class App extends Vue {}
