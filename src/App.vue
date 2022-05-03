@@ -3,7 +3,8 @@
     <!-- <Header />
     <Parent /> -->
     <!-- <Object /> -->
-    <LogButton />
+    <!-- <LogButton /> -->
+    <ShowProductColor />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Parent from "./components/Parent.vue";
 import Header from "./components/Header.vue";
 import Object from "./components/Object.vue";
 import LogButton from "./components/LogButton.vue";
+import ShowProductColor from "./components/ShowProductColor.vue";
 
 @Options({
   components: {
@@ -20,6 +22,7 @@ import LogButton from "./components/LogButton.vue";
     Header,
     Object,
     LogButton,
+    ShowProductColor,
   },
 })
 export default class App extends Vue {}
@@ -32,6 +35,5 @@ export default class App extends Vue {}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
