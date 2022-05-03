@@ -1,8 +1,9 @@
 <template>
   <div>
-    <Header />
-    <Parent />
-    <Object />
+    <!-- <Header />
+    <Parent /> -->
+    <!-- <Object /> -->
+    <LogButton />
   </div>
 </template>
 
@@ -11,12 +12,14 @@ import { Options, Vue } from "vue-class-component";
 import Parent from "./components/Parent.vue";
 import Header from "./components/Header.vue";
 import Object from "./components/Object.vue";
+import LogButton from "./components/LogButton.vue";
 
 @Options({
   components: {
     Parent,
     Header,
     Object,
+    LogButton,
   },
 })
 export default class App extends Vue {}
