@@ -4,7 +4,8 @@
     <Parent /> -->
     <!-- <Object /> -->
     <!-- <LogButton /> -->
-    <ShowProductColor />
+    <!-- <ShowProductColor /> -->
+    <Movies />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import Header from "./components/Header.vue";
 import Object from "./components/Object.vue";
 import LogButton from "./components/LogButton.vue";
 import ShowProductColor from "./components/ShowProductColor.vue";
+import Movies from "./components/Movies.vue";
 
 @Options({
   components: {
@@ -23,6 +25,7 @@ import ShowProductColor from "./components/ShowProductColor.vue";
     Object,
     LogButton,
     ShowProductColor,
+    Movies,
   },
 })
 export default class App extends Vue {}
